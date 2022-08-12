@@ -31,6 +31,7 @@ Portal Check
     [Arguments]    ${browser_selection}=AUTO
     Open Available Browser    ${PORTAL_SITE}    browser_selection=${browser_selection}
     Capture Page Screenshot    ${OUTPUTDIR}${/}screenshot.png
+    # Highlighting used because there was Selenium 4 change related change within `Clear All Highlights` keyword 
     Highlight Elements    css:button
     Sleep    5s
     Clear All Highlights
