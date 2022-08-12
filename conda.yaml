@@ -5,8 +5,17 @@ dependencies:
   - python=3.9.13
   - pip=22.1.2
   - pip:
+      ## Latest production build
       #- rpaframework==15.7.0
+      ## DEV builds
+      ## rpaframework without any rpaframework sub packages
+      ## and selenium & robotframework-seleniumlibrary dep
+      ## versions wildcarded
       - rpaframework-15.8.0-py3-none-any.whl
       - rpaframework_core-9.1.1-py3-none-any.whl
-      - selenium==4.4.0
-      - robotframework-seleniumlibrary==6.0.0
+      ## NEW Selenium 4 packages
+      #- selenium==4.4.0
+      #- robotframework-seleniumlibrary==6.0.0
+      ## OLD Selenium 3 packages
+      - selenium==3.141.0
+      - robotframework-seleniumlibrary==5.1.0
